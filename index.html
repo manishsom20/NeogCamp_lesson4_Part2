@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Speak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="text--center flex" style="justify-content: center;">
+        <a href="/index.html" class="">
+            <span class="flex flex-align-center">
+                Pirate Speak
+            </span>
+        </a>
+    </nav>
+    <div class="container--fluid" style="width: 100%; position: relative;">
+        <div class="container">
+            <!-- <img src="/img/jack.png" alt="" class=""> -->
+            <div class="translator">
+                <label for="translate_text" class="text--muted"><span style="font-size: 12px;">Your Text</span></label>
+                <textarea name="translate_text" id="translate_text" rows="5" placeholder="Enter your text to translate"></textarea>
+                <small class="text--muted">Sample Phrase: Hello sir! my mother goes with me to the ocean.</small>
+                <button id="btn_translate">Translate to Pirate</button>
+                
+                <label for="translate_text" class="text--muted"><span style="font-size: 12px;">Pirate Speak</span></label>
+                <div id="pirate_text" class=" flex flex-align-center">
+                        <!-- converted text here  -->
+
+                        <!-- if no text -->
+                        <div class="text--muted text--center">
+                            <h2>&#x2620</h2>
+                            <small>Please enter some text to translate</small>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <img src="/img/barbosa.png" alt="" style="height: 275px; position: absolute; right: 10vw; bottom: 0;">
+    </div>
+    
+    <footer>
+        <div class="footer-credits text--center">
+           &lt;/&gt; by <a href="https://manishsom021100.netlify.app/" target="_blank" class="">Manish</a> 
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
